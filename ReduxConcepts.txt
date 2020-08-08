@@ -1,0 +1,7 @@
+1)Redux Store :
+  Responsibilities:
+1. Holds Application State.
+2. Allows access to State vis getState()
+3. Allows state to be updated via dispatch(action)
+4. Registers listeners via subscribe(listener) 
+5. subscribe method takes function as a argument.
