@@ -1,3 +1,6 @@
+# React-Redux--Toolkit-Blog-App
+
+A Small blog application build with React Redux-Toolkit which will fetch posts and comments from an API.
 <<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -66,8 +69,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 ### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-=======
-# React-Redux--Toolkit-Blog-App
-A Small blog application build with React Redux-Toolkit which will fetch posts and comments from an API.
->>>>>>> a3c0d7fb45febd15e41ebd2de6008e4f2268be8b
+# This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+> > > > > > > a3c0d7fb45febd15e41ebd2de6008e4f2268be8b
