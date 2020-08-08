@@ -1,5 +1,15 @@
 import React, { createContext, useReducer, useState } from "react";
-import logo from "./logo.svg";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
+
+import DashboardPage from "./pages/DashboardPage";
+import PostsPage from "./pages/PostsPage";
+
+/*import logo from "./logo.svg";
 import "./App.css";
 import HookCounter from "./components/HookCounter";
 import HookCounterTwo from "./components/HookCounterTwo";
@@ -69,7 +79,7 @@ function App() {
     </div>
   );
 }
-*/
+
 
 export const ACTIONS = {
   ADD_TODO: "add-todo",
@@ -126,5 +136,19 @@ function App() {
     </>
   );
 }
+
+export default App;*/
+
+const App = () => {
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/" component={DashboardPage} />
+        <Route exact path="/posts" component={PostsPage} />
+        <Redirect to="/" />
+      </Switch>
+    </Router>
+  );
+};
 
 export default App;

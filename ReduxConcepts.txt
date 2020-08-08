@@ -11,3 +11,5 @@ NOTE: dispatch is a method available on the store which is used to update the re
 eg: dispatch(deleteTodo())
 
 NOTE: thunk is a middlewaqre that allows us to make asynchronous actions in redux
+Reducers determine changes to the state based on the actions
+Reducers make the changes to the state and the action tell what changes you want to do .
