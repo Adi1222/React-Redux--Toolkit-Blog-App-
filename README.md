@@ -1,6 +1,6 @@
-# React-Redux--Toolkit-Blog-App
+# React-Redux-Blog-App
 
-A Small blog application build with React Redux-Toolkit which will fetch posts and comments from an API.
+A Small blog application build with React Redux which will fetch posts and comments from an API.
 <<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
