@@ -10,4 +10,4 @@ NOTE: When use with React a <Provider> exists to wrap the Application and anythi
 NOTE: dispatch is a method available on the store which is used to update the redux state and the updation details is given by the action and an action can be passed as an argument to the dispatch method or an actioncreator can be invoked.
 eg: dispatch(deleteTodo())
 
-NOTE: thunk is a middlewaqre that allows us to make asynchronous actions in redux.
+NOTE: thunk is a middlewaqre that allows us to make asynchronous actions in redux
