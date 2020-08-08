@@ -5,3 +5,9 @@
 3. Allows state to be updated via dispatch(action)
 4. Registers listeners via subscribe(listener) 
 5. subscribe method takes function as a argument.
+NOTE: The createStore(reducer) takes reducer as an argumet.
+NOTE: When use with React a <Provider> exists to wrap the Application and anything inside the provider can have access to the Redux.
+NOTE: dispatch is a method available on the store which is used to update the redux state and the updation details is given by the action and an action can be passed as an argument to the dispatch method or an actioncreator can be invoked.
+eg: dispatch(deleteTodo())
+
+NOTE: thunk is a middlewaqre that allows us to make asynchronous actions in redux.
