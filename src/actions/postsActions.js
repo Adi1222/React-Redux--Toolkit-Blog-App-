@@ -1,4 +1,5 @@
 // Redux Action Types
+import axios from "axios";
 
 export const GET_POSTS = "GET_POSTS";
 export const GET_POSTS_SUCCESS = "GET_POSTS_SUCCESS";
@@ -21,6 +22,24 @@ export const getPostsFailure = () => ({
 
 // Combine all action creators in an asynchronous thunk
 
+export const fetchPosts = () => {
+  return (dispatch) => {
+    dispatch(getPosts);
+
+    axios
+      .get("https://jsonplaceholder.typicode.com/posts")
+      .then((response) => {
+        const users = response.data;
+        dispatch(getPostsSuccess(users));
+      })
+      .catch((error) => {
+        const errorMsg = error.message;
+        dispatch(getPostsFailure());
+      });
+  };
+};
+
+/*
 export function fetchPosts() {
   return async (dispatch) => {
     dispatch(getPosts());
@@ -45,4 +64,4 @@ try {
   dispatch(getPostsSuccess(data));
 } catch (error) {
   dispatch(getPostsFailure());
-}
+}*/
